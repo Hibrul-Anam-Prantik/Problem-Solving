@@ -55,3 +55,72 @@ Constraints:
 0 <= strs[i].length <= 200
 strs[i] consists of only lowercase English letters.
  */
+
+// My try
+ /*
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        sc.close();
+        String[] strs = {"flower","flow","flight", "fltr"};
+        String prefix = "";
+        String temp = "";
+        boolean match = true;
+//        boolean found = false;
+        for(int i = 0; i < strs.length; i++) {
+//             boolean match = true;
+             int j = 0;
+             String s = "";
+             while(match) {
+                  if(strs[i].charAt(j) == strs[i+1].charAt(j)) {
+                       s += strs[i].charAt(j);
+                       j ++;
+                  } else {
+                       match = false;
+                  }
+             }
+             
+             if(i > 0 && s.equals(temp)) {
+                  match = true;
+             } else if(i > 0 && !s.equals(temp)) {
+                  int a = s.length(); int b = temp.length();
+                  int x = a - b; int y = b - a;
+                  String s2 = "";
+                  if (x < y) {
+                       for(int p = 0; p < a; p++) {
+                            if(s.charAt(p) == temp.charAt(p)) {
+                                 s2 += s.charAt(p);
+                            } else {
+                                 break;
+                            }
+                       }
+                       if(!s2.equals("")) {
+                            match = true;
+                       } else {
+                            match = false;
+                       }
+                  } else {
+                       for(int p = 0; p < b; p++) {
+                            if(temp.charAt(p) == s.charAt(p)) {
+                                 s2 += temp.charAt(p);
+                            } else {
+                                 break;
+                            }
+                       }
+                       if(!s2.equals("")) {
+                            match = true;
+                       } else {
+                            match = false;
+                       }
+                  }
+//                  match = false;
+             }
+             s = temp;
+        }
+             
+        System.out.println(prefix);
+    }
+}
+ */
