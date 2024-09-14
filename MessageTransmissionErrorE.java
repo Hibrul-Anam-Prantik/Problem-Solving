@@ -5,23 +5,15 @@ public class MessageTransmissionErrorE {
         Scanner sc = new Scanner(System.in);
         String t = sc.nextLine();
         sc.close();
-        int length = t.length();
+        int l = t.length();
 
-        // Try every possible overlap length from 1 up to length/2
-        for (int s = 1; s < length / 2 + 1; s++) {
-            String prefix = t.substring(0, length - s);
-            String suffix = t.substring(length - s);
+        String s1 = t.substring(0, l / 2 + 1);
+        String s2 = t.substring(l / 2);
 
-            // Check if the overlap condition is satisfied
-            if (t.startsWith(prefix) && t.endsWith(suffix) && prefix.length() == suffix.length() && prefix.equals(suffix)) {
-                System.out.println("YES");
-                System.out.println(prefix);
-                return;
-            }
+        if (s1.equals(s2)) {
+            System.out.println("YES\n" + s1);
+        } else {
+            System.out.println("NO");
         }
-        
-        // If no valid overlap is found, print NO
-        System.out.println("NO");
-        
     }
 }
