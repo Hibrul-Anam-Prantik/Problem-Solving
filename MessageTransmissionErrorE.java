@@ -4,6 +4,7 @@ public class MessageTransmissionErrorE {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String t = sc.nextLine();
+        sc.close();
         int length = t.length();
 
         // Try every possible overlap length from 1 up to length/2
@@ -21,6 +22,6 @@ public class MessageTransmissionErrorE {
         
         // If no valid overlap is found, print NO
         System.out.println("NO");
-        sc.close();
+        
     }
 }
