@@ -1,4 +1,4 @@
-package HackerRank_30DaysOfCode;
+// package HackerRank_30DaysOfCode;
 
 public class Dayo4_Person {  // class vs instance
     public int age;
