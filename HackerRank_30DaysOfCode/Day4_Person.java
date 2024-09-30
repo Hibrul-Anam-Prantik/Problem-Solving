@@ -1,9 +1,9 @@
-// package HackerRank_30DaysOfCode;
+package HackerRank_30DaysOfCode;
 
-public class Dayo4_Person {  // class vs instance
+public class Day4_Person {  // class vs instance
     public int age;
 
-    public Dayo4_Person(int initialAge) {
+    public Day4_Person(int initialAge) {
         if(initialAge >= 0) {
             age = initialAge;
         } else {
