@@ -1,10 +1,10 @@
 public class SneakyNumbers {
     public static void main(String[] args) {
-        
+        Solution1 s1 = new Solution1();
     }
 }
 
-class Solution {
+class Solution1 {
     public int[] getSneakyNumbers(int[] nums) {
         int[] sneakyNum = new int[2];
         int count = 0;

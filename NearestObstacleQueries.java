@@ -2,7 +2,7 @@ import java.util.*;
 
 public class NearestObstacleQueries {
     public static void main(String[] args) {
-        Solution s1 = new Solution();
+        Solution0 s1 = new Solution0();
         int[][] a = {{1,2}, {3,4}, {2,3}, {3,0}};
         int k = 2;
         int[] results = s1.resultsArray(a, k);
@@ -14,7 +14,7 @@ public class NearestObstacleQueries {
     }
 }
 
-class Solution {
+class Solution0 {
     public int[] resultsArray(int[][] queries, int k) {
         int[] results = new int[queries.length];
         int[] distances = new int[queries.length];
