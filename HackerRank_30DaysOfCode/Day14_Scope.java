@@ -1,10 +1,6 @@
 package HackerRank_30DaysOfCode;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Day14_Scope {
 
@@ -35,10 +31,10 @@ class Difference {
     }
     void computeDifference() {
         // maximumDifference = 0;
-        for(int i = 0; i < elements.length; i++) {
-            for(int j = 0; j < elements.length; j++) {
-                if((Math.abs(elements[i] - elements[j])) > maximumDifference) {
-                    maximumDifference = Math.abs(elements[i] - elements[j]);
+        for (int element : elements) {  // enhanced for loop
+            for (int i : elements) {  // // enhanced for loop
+                if ((Math.abs(element - i)) > maximumDifference) {
+                    maximumDifference = Math.abs(element - i);
                 }
             }
         }
