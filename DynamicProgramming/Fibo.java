@@ -31,6 +31,6 @@ public class Fibo
     }
 
     public static void main(String[] args) {
-        Fibo fib = new Fibo(14);
+        Fibo fib = new Fibo(12);
     }
 }
